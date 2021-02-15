@@ -1,0 +1,13 @@
+-- VNml v.1.0. --
+; Form properties to save / load
+WinForms:SaveProperties
+	Property1=[System.Windows.Forms.SplitContainer|SplitterDistance]
+	Property2=[System.Windows.Forms.Splitter|SplitPosition]
+	Property3=[System.Windows.Forms.ListView|[]Columns.Width]
+	Property4=[System.Windows.Forms.DataGridView|[]Columns.Width]
+	
+; Window properties to save / load
+WPF:SaveProperties
+	Property1=[System.Windows.Controls.Grid|[]ColumnDefinitions.Width]
+	Property2=[System.Windows.Controls.Grid|[]RowDefinitions.Height]
+	Property3=[System.Windows.Controls.ListView|[]Columns.Width]

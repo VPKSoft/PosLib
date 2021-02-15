@@ -1,0 +1,65 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>VPKSoft.PosLib</RootNamespace>
+    <AssemblyName>VPKSoft.PosLib</AssemblyName>
+    <TargetFrameworks>netcoreapp3.1;net5.0-windows;net47</TargetFrameworks>
+    <AssemblyTitle>PosLib</AssemblyTitle>
+    <Company>VPKSoft</Company>
+    <Product>PosLib</Product>
+    <Description>A library for storing and loading application's window positioning</Description>
+    <Copyright>Copyright © VPKSoft 2021</Copyright>
+    <Version>1.0.2</Version>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <DocumentationFile>bin\$(Configuration)\VPKSoft.PosLib.xml</DocumentationFile>
+    <Authors>VPKSoft</Authors>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
+    <PackageProjectUrl>https://www.vpksoft.net/2015-03-31-13-33-28/libraries/poslib</PackageProjectUrl>
+    <PackageReleaseNotes>See: https://github.com/VPKSoft/PosLib</PackageReleaseNotes>
+    <PackageTags>PosLib VPKSoft Utilities</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <UseWindowsForms>true</UseWindowsForms>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>VPKSoft.ico</ApplicationIcon>
+    <PackageLicenseExpression>LGPL-3.0-or-later</PackageLicenseExpression>
+    <PackageIcon>vpksoft_logo.png</PackageIcon>
+    <RepositoryUrl>https://github.com/VPKSoft/PosLib</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="VPKSoft.Utils" Version="1.0.7" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' == 'net47' ">
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="history.txt" />
+    <Content Include="VPKSoft.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Positions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\vpksoft_logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+</Project>
