@@ -35,6 +35,7 @@
     <PackageIcon>vpksoft_logo.png</PackageIcon>
     <RepositoryUrl>https://github.com/VPKSoft/PosLib</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="VPKSoft.Utils" Version="1.0.7" />
